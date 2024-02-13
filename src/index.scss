@@ -1,32 +1,32 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    background-color: brown;
-    font-family: 'Montserrat' sans-serif;
-} 
+	background-color: gray;
+	font-family: 'Montserrat' sans-serif;
+}
 
 .container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 ul {
-    list-style: none;
+	list-style: none;
 }
 
 .df {
-    display: flex;
+	display: flex;
 }
 
 .text_center {
-    text-align: center;
+	text-align: center;
 }
