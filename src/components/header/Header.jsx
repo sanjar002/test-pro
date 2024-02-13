@@ -16,19 +16,19 @@ const Header = () => {
 						<Link to='/'>Главная</Link>
 					</li>
 					<li>
-						<Link to='/курсы'>Курсы</Link>
+						<Link to='/course'>Курсы</Link>
 					</li>
 					<li>
-						<Link to='/преподавател'>Преподавател</Link>
+						<Link to='/teacher'>Преподаватель</Link>
 					</li>
 					<li>
-						<Link to='/о нас'>О нас</Link>
+						<Link to='/about'>О нас</Link>
 					</li>
 					<li>
-						<Link to='/отзывы'>Отзывы</Link>
+						<Link to='/review'>Отзывы</Link>
 					</li>
 					<li>
-						<Link to='Контакты'>Контакты</Link>
+						<Link to='/contact'>Контакты</Link>
 					</li>
 				</ul>
 			</nav>
