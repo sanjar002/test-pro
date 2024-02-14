@@ -6,32 +6,36 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
 	return (
-		<header className='container'>
-			<div className='logo'>
-				<img src={logo} alt='okurmen logo' />
+		<header className='header'>
+			<div className='container'>
+				<div className='header_wrapper'>
+					<div className='logo'>
+						<img src={logo} alt='okurmen logo' />
+					</div>
+					<nav>
+						<ul>
+							<li>
+								<Link to='/'>Башкы бет</Link>
+							</li>
+							<li>
+								<Link to='/course'>Курстар</Link>
+							</li>
+							<li>
+								<Link to='/teacher'>Мугалимдер</Link>
+							</li>
+							<li>
+								<Link to='/about'>Окурмэн</Link>
+							</li>
+							<li>
+								<Link to='/review'>Отзыв</Link>
+							</li>
+							<li>
+								<Link to='/contact'>Контакт</Link>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</div>
-			<nav>
-				<ul>
-					<li>
-						<Link to='/'>Главная</Link>
-					</li>
-					<li>
-						<Link to='/course'>Курсы</Link>
-					</li>
-					<li>
-						<Link to='/teacher'>Преподаватель</Link>
-					</li>
-					<li>
-						<Link to='/about'>О нас</Link>
-					</li>
-					<li>
-						<Link to='/review'>Отзывы</Link>
-					</li>
-					<li>
-						<Link to='/contact'>Контакты</Link>
-					</li>
-				</ul>
-			</nav>
 		</header>
 	)
 }
