@@ -12,7 +12,7 @@ const Header = () => {
 					<div className='logo'>
 						<img src={logo} alt='okurmen logo' />
 					</div>
-					<nav>
+					<nav className='navs'>
 						<ul>
 							<li>
 								<Link to='/'>Башкы бет</Link>

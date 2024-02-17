@@ -1,8 +1,9 @@
 import React from 'react'
-import './Home.scss'
 
 import Card from '../../components/card/Card'
 import Carousel from '../../components/Carousel/Carousel'
+
+import './Home.scss'
 
 const Home = () => {
 	return (
@@ -40,7 +41,9 @@ const Home = () => {
 			</section>
 			<section className='main-carousel'>
 				<div className='container'>
-					<Carousel />
+					<div className='carousel'>
+						<Carousel />
+					</div>
 				</div>
 			</section>
 		</main>
