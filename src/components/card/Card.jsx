@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import card from '../../data/card'
 
@@ -10,8 +9,11 @@ function Card() {
 		<div className='cards'>
 			{card.map((item, index) => (
 				<div key={index} className='card'>
-					<h2>{item.name}</h2>
-					<p>{item.text}</p>
+					<h2 className='card-title'>{item.name}</h2>
+					<p className='small-desc'>{item.text}</p>
+					<div className='go-corner'>
+						<div className='go-arrow'>→</div>
+					</div>
 				</div>
 			))}
 		</div>
