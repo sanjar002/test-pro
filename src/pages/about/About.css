@@ -1,0 +1,137 @@
+body {
+  font-family: "Montserrat";
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bg-image {
+  width: 1440px;
+  background: center url(./images/group.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 724px;
+  animation: fadeIn 2s ease-in-out;
+}
+.bg-image img {
+  width: 100%;
+}
+
+.texts {
+  color: white;
+  text-align: center;
+}
+.texts h1 {
+  font-size: 64px;
+}
+
+.update {
+  display: flex;
+  justify-content: center;
+}
+.update .updateTxt {
+  margin-top: 59px;
+}
+.update .updateTxt p {
+  text-align: center;
+}
+.update .updateTxt .okurmen {
+  font-weight: "";
+}
+.update .updateTxt .important {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.update .updateTxt .updateP {
+  margin-top: 40px;
+  opacity: 0;
+  animation: fadeInDown 1s ease-out forwards;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.four_boxes {
+  display: flex;
+  margin-top: 75px;
+  justify-content: space-between;
+  animation: fadeIn 2s ease-in-out;
+}
+.four_boxes .box p {
+  text-align: center;
+}
+
+.images {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.images img {
+  width: 883px;
+  height: 517px;
+}
+.images .important {
+  position: absolute;
+  z-index: 1;
+}
+.images .first {
+  position: relative;
+}
+.images .second {
+  position: relative;
+}
+
+#carousel .vectors {
+  width: 0px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 400px;
+  z-index: 2;
+  right: 130px;
+}
+@media (max-width: 1024px) {
+  .update {
+    width: 1440px;
+  }
+  .four_boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+  }
+}
+@media (max-width: 320px) {
+  .bg-image {
+    background-position: -220px;
+  }
+  .bg-image .texts {
+    margin-left: -130px;
+  }
+}
+.yt-video {
+  margin-top: 100px;
+  border-radius: 20px;
+}/*# sourceMappingURL=About.css.map */

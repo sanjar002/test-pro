@@ -1,0 +1,35 @@
+.d-slide {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.slide img {
+	width: 750px;
+	margin: 0 auto;
+}
+
+.slide {
+	transform: scale(0.6);
+	transition: transform 300ms;
+}
+
+.activeSlide {
+	transform: scale(1.1);
+	transition: transform 0.5s ease;
+}
+
+.arrow {
+	background-color: #fff;
+	position: absolute;
+	cursor: pointer;
+	z-index: 11;
+}
+.next {
+	right: 0;
+	top: 50%;
+}
+
+.prev {
+	left: 0;
+	top: 50%;
+}

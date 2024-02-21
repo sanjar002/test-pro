@@ -1,0 +1,62 @@
+footer {
+  height: 663px;
+  background-color: #e6e6e6;
+  margin-top: 100px;
+  width: 100%;
+}
+footer .map {
+  padding: 42px 0 74px 0px;
+}
+footer .map .navigation {
+  display: flex;
+  margin-left: 250px;
+  align-items: center;
+}
+footer .map .navigation img {
+  margin-right: 10px;
+}
+footer .map .navigation .nav {
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+footer .map .carta {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .map .carta .border {
+  height: 352px;
+  border-right: 4px solid white;
+  width: 4px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  footer {
+    width: 1440px;
+  }
+  footer .map .navigation h1 {
+    margin-left: -10px;
+  }
+  footer .map .navigation img {
+    margin-left: -50px;
+  }
+}
+@media (max-width: 320px) {
+  .map .infoFoots {
+    margin: 100px;
+  }
+  .map .navigation {
+    width: 150px;
+  }
+}/*# sourceMappingURL=Footer.css.map */
