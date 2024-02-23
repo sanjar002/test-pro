@@ -2,14 +2,12 @@ import React from 'react';
 
 
 const CartHome = () => {
-  // const ref = useRef(null);
-  // const isInView = useInView(ref, { once: true });
   return (
     <section className="text-gray-600 body-font relative">
       <div className="absolute inset-0 bg-gray-300">
         <iframe
           width="452"
-          height="479"
+          height="479" 
           frameBorder="0"
           marginHeight="0"
           marginWidth="0"

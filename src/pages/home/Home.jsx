@@ -6,13 +6,6 @@ import Carousel from '../../components/Carousel/Carousel'
 import './Home.scss'
 
 const Home = () => {
-<<<<<<< HEAD
-  return (
-    <div>
-      Home
-    </div>
-  )
-=======
 	return (
 		<main className='main'>
 			<div className='main-content'>
@@ -55,7 +48,6 @@ const Home = () => {
 			</section>
 		</main>
 	)
->>>>>>> eb94f9be396330a7ec2880080f1d56b1b70231aa
 }
 
 export default Home
