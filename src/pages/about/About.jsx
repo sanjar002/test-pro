@@ -89,7 +89,7 @@ function About({ children }) {
           </motion.div>
           <p style={{fontSize:"25px"}}>Мансур-Бек Канназар</p>
           <p>Башкы Негиздоочу</p>
-          <h2>fghjk</h2>
+          <h3>fghjk</h3>
         </div>
         <div className="box">
           <motion.div
