@@ -66,7 +66,7 @@ function About({ children }) {
       </div>
       </div>
 
-      
+
       <div className="container">
       <div className="four_boxes">
         <div className="box">
@@ -89,6 +89,7 @@ function About({ children }) {
           </motion.div>
           <p style={{fontSize:"25px"}}>Мансур-Бек Канназар</p>
           <p>Башкы Негиздоочу</p>
+          <p>fghjk</p>
         </div>
         <div className="box">
           <motion.div
