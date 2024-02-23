@@ -2,7 +2,6 @@ import React from 'react'
 
 import styled, {keyframes,css} from 'styled-components'
 
-import './Animation.scss'
 
 function Animation() {
 
@@ -48,6 +47,7 @@ const AppContainer = styled.div`
     margin: 0 auto;
     color: #000;
     margin-top: 20px;
+    margin-bottom: 100px;
 `;
 
 const Wrapper = styled.div`

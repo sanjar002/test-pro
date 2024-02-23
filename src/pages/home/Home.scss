@@ -64,11 +64,21 @@
 	}
 	.main-animation {
 		margin-top: 70px;
+		margin-bottom: 40px;
 		.animation-text {
 			text-align: center;
 			font-size: 32px;
 			line-height: 39px;
 			font-weight: 700;
+			color: #FA9801;
+		}
+	}
+	.main-request {
+		&-text {
+			text-align: center;
+			font-size: 36px;
+			font-weight: 700;
+			line-height: 43px;
 			color: #FA9801;
 		}
 	}

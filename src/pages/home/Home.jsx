@@ -1,12 +1,13 @@
 import React from 'react'
 
+import Animation from '../../components/animation/Animation'
 import Card from '../../components/card/Card'
 import Carousel from '../../components/Carousel/Carousel'
 
 import './Home.scss'
-import Animation from '../../components/animation/Animation'
 
 const Home = () => {
+
 	return (
 		<main className='main'>
 			<div className='main-content'>
@@ -52,6 +53,11 @@ const Home = () => {
 					<div className='animation-content'>
 						<Animation />
 					</div>
+				</div>
+			</section>
+			<section className='main-request'>
+				<div className='container'>
+					<div className="main-request-text">Бизге эң көп берилүүчү суроолор</div>
 				</div>
 			</section>
 		</main>
