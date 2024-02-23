@@ -6,7 +6,6 @@ import Munar from "./images/munar.png";
 
 import { useInView, motion } from "framer-motion";
 import "./About.scss";
-import Carousel from "./Carousel";
 
 const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
 const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
@@ -22,28 +21,14 @@ function About({ children }) {
       <div className="bg-image">
         <div className="container">
           <section className="section">
-            <div className="texts" ref={ref}>
-              <h1
-                style={{
-                  transform: isInView ? "none" : "translateX(-200px)",
-                  opacity: isInView ? 1 : 0,
-                  transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-                }}
-              >
+            <div className="texts" >
+              <h1>
                 OKURMEN IT программалоо тилдерин
-                {children}
               </h1>
-              <p
-                style={{
-                  transform: isInView ? "none" : "translateX(200px)",
-                  opacity: isInView ? 1 : 0,
-                  transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-                }}
-              >
+              <p style={{opacity:"0.6",fontSize:"20"}}>
                 Тажырыйбанын негизинде биз идеалдуу курстун программасын <br />{" "}
                 туздук, курстан кийин сиз ‘разработчик’ болуп компанияда <br />{" "}
                 иштесениз болот.
-                {children}
               </p>
             </div>
           </section>
@@ -52,7 +37,7 @@ function About({ children }) {
       <div className="container">
       <div className="update">
         <div className="updateTxt">
-          <p className="important">
+          <p className="important" style={{fontWeight:"600",fontSize:"20"}}>
             <span className="okurmen">ОКУРМЭН </span>{" "}
             <span>- бул өнүктүрүүчү чөйрө!</span>
           </p>
@@ -166,7 +151,7 @@ function About({ children }) {
       </div>
       <div className="ReelsOfOkurmen">
         <iframe
-          width="1450"
+          width="100%"
           height="700"
           class="yt-video"
           src="https://www.youtube.com/embed/nR7XkTWi9tM?si=HerVxcqeYYQPT7y9?autoplay=1&vq=hd1080"
@@ -176,7 +161,6 @@ function About({ children }) {
           allowfullscreen
         ></iframe>
       </div>
-      <Carousel />
       </div>
     </main>
   );
