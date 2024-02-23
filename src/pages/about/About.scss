@@ -1,6 +1,9 @@
 body{
     font-family: "Montserrat";
 }
+.container{
+    border: 2px solid red;
+}
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -91,7 +94,7 @@ body{
     .box p{
         text-align: center;
         // font-size: 25px;
-        font-weight: 600;
+        font-weight: 500;
     }
 }
 .images{
@@ -116,116 +119,56 @@ body{
     }
 }
 
-#carousel{
-    .vectors{
-        width: 00px;
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        top: 400px;
-        z-index: 2;
-        right: 130px;
-        button{
-                
-        }
-    }
-}
+
+
+// qawsdertyui
+
+
+
+    // asdfgyhujihgfewaerdtifyghubhjhtdfyhbtfgbhguhg5tg
+
+
+
+
+
+
+// asdrftyu8i9oiuytredwsfghyjuijyhgfds
 
 @media (max-width: 1024px){
      .update{
-        width: 1440px;
+        width: 1024px;
      }
      .bg-image{
-        width: 1440px;
+        width: 100%;
      }
      .four_boxes{
         display: flex;
         justify-content: space-between;
         justify-content: center;
         gap: 50px;
-        width: 1440px;
-     }
+        width: 100%;
+    }
 }
-@media (max-width: 320px) {
+@media (max-width:768px){
+    .update{
+        width: 100%;
+    }
     .bg-image{
-        background-position: -220px;
-        .texts{
-            margin-left: -130px;
-        }
+        background-position: -660px;
+    }
+
+    .four_boxes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .mainCarta{
+        width: 310px;
     }
 }
 
-// @media (max-width: 1200px){
-//     .bg-image{
-        
-//         background-position: -280px;
-//     }
-//     .texts{
-//         margin-right: 200px;
-//     }
-//     .update{
-//         margin-left: 50px;
-//     }
-//     .four_boxes {
-//         display: flex;
-//         flex-wrap: wrap;
-//         justify-content: space-around;
-//         align-items: center; 
-      
-//         .box {
-//           width: calc(40% - 20px); 
-//           margin: 10px; 
-//           text-align: center; 
-      
-//           img {
-//             max-width: 100%;
-//             height: auto; 
-//           }
-      
-//           p {
-//             margin-top: 10px; 
-//           }
-//         }
-//       }
-// }
-// @media (max-width: 1440px){
-//     .bg-image{
-//         background-position: -250px;
-//     }
-//     .texts{
-//         margin-right: 150px;
-//     }
-//     .update{
-//         margin-right: 130px;
-//     }
-//     .four_boxes {
-//         display: flex;
-//         flex-wrap: wrap;
-//         justify-content: space-around;
-//       }
-      
-//       .row {
-//         display: flex;
-//         justify-content: space-around;
-//         width: 900px;
-//         margin-bottom: 20px; /* Adjust as needed */
-//       }
-      
-//       .box {
-//         flex: 0 0 calc(33.33% - -105px); /* Adjust as needed, considering margins */
-//         margin-bottom: 10px; 
-//         p{
-//             margin-right: 90px;
-//         }
-//       }
-      
-//       .single-box {
-//         flex: 0 0 calc(100% - 500px);
-//       }
-      
-// }
-
-
+.ReelsOfOkurmen{
+    width: 100%;
+}
 .yt-video{
     margin-top: 100px;
     border-radius: 20px;
