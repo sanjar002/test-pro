@@ -17,6 +17,7 @@ const Footer = ({ children }) => {
 
   return (
     <footer >
+      <div className="container">
       <div className="map">
         <div className="navigation" ref={ref}>
           <span className="nav">
@@ -39,6 +40,7 @@ const Footer = ({ children }) => {
             <CartHome />
           </div>
           <div className="border"></div>
+          
           <div className="infoFoots">
             <div
               className="telephone"
@@ -53,7 +55,7 @@ const Footer = ({ children }) => {
             >
               {children}
               <img src={Telephone} alt="" />
-              <p>+999 (709)-677-798</p>
+              <p className="okurmen_it" style={{width:"200"}}>+999 (709)-677-798</p>
             </div>
             <div
               className="instagram"
@@ -67,8 +69,8 @@ const Footer = ({ children }) => {
               }}
             >
               {children}
-              <img src={Instagram} alt="" style={{ paddingTop: "20px" }} />
-              <p>okurmen_it</p>
+              <img src={Instagram} alt="" style={{ paddingTop: "30px" }} />
+              <p className="okurmen_it" style={{width:"200"}}>okurmen_it</p>
             </div>
             <div
               className="gmail"
@@ -82,8 +84,8 @@ const Footer = ({ children }) => {
               }}
             >
               {children}
-              <img src={Gmail} alt="" style={{ paddingTop: "20px" }} />
-              <p>okurmen@gmail.com</p>
+              <img src={Gmail} alt="" style={{ paddingTop: "30px" }} />
+              <p className="okurmen_it">okurmen@gmail.com</p>
             </div>
             <div
               className="facebook"
@@ -98,8 +100,8 @@ const Footer = ({ children }) => {
             >
               {children}
 
-              <img src={Facebook} alt="" style={{ paddingTop: "20px" }} />
-              <p>okurmen_it</p>
+              <img src={Facebook} alt="" style={{ paddingTop: "30px" }} />
+              <p className="okurmen_it" style={{width:"200"}}>okurmen_it</p>
             </div>
             <div
               className="towards"
@@ -112,14 +114,15 @@ const Footer = ({ children }) => {
                 transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
               }}
             >
-              <img src={Towardz} alt="" style={{ paddingTop: "20px" }} />
-              <p>
+              <img src={Towardz} alt="" style={{ paddingTop: "30px" }} />
+              <p className="okurmen_it" style={{width:"200"}}>
                 Турусбекова 109/1 Максимум <br /> БЦ 4-этаж, 407 / 411 -
                 аудитория
               </p>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </footer>
   );

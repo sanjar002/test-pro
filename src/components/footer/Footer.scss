@@ -1,125 +1,126 @@
-footer{
-    height: 663px;
-    background-color: #e6e6e6;
-    margin-top: 100px;
+.container {
+  border: 2px solid red;
+}
+footer {
+  height: 663px;
+  background-color: #e6e6e6;
+  margin-top: 100px;
+  width: 100%;
+  border: 2px solid red;
+
+  .map {
+    padding: 42px 0 74px 00px;
+    // width: 100%;
+
+    .navigation {
+      display: flex;
+      // margin-top: 50px;
+      width: 630px;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        margin-right: 10px;
+      }
+      .nav {
+        opacity: 0;
+        animation: fadeInUp 1.5s ease-out forwards;
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(-200px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+    .infoFoots {
+      // margin-left: 250px
+    }
+    .carta {
+      display: flex;
+      // align-items: center;
+      justify-content: space-around;
+      .infoFoots {
+        margin: 100px;
+      }
+
+      .border {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 352px;
+        border-right: 4px solid white;
+        width: 4px;
+        border-radius: 10px;
+        margin-left: 450px;
+        margin-top: 50px;
+      }
+      .mapAround {
+        // margin-bottom: 350px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  footer {
     width: 100%;
-    .map{
-        padding: 42px 0 74px 00px;
-        // width: 100%;
+    .map {
+      // margin-left: -150px;
 
-
-        .navigation{
-            display: flex;
-            // margin-top: 50px;
-            width: 750px;
-            justify-content: center;
-            align-items: center;
-
-            img{
-                margin-right: 10px;
-            }
-            .nav{
-                opacity: 0;
-                animation: fadeInUp 1.5s ease-out forwards;
-
-            }
-            @keyframes fadeInUp {
-                from {
-                    opacity: 0;
-                    transform: translateY(-200px);
-                }   
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
+      .navigation {
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        h1 {
+          margin-left: -10px;
         }
+        img {
+          margin-left: -50px;
+        }
+      }
+      .carta {
+        .border {
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    height: 1000px;
+    .map {
+      .navigation {
+        width: 350px;
+        display: flex;
+        justify-content: center;
+      }
+      .carta {
+        display: flex;
+        // justify-content: center;
+        flex-direction: column;
+        .infoFoots {
+            margin-right: 50px;
+          p {
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:320){
+   .map{
+    .carta{
         .infoFoots{
-            // margin-left: 250px
-        }
-        .carta{
-            display: flex;
-            // align-items: center; 
-            justify-content: space-around;
-            .infoFoots{
-                margin: 100px;
+            .okurmen_it{
+                width: 200px;
             }
+        }
+    }
+   }
 
-            .border{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 352px;
-                border-right: 4px solid white;
-                width: 4px;
-                border-radius: 10px;
-                margin-left: 450px; 
-                margin-top: 50px; 
-            }
-            .mapAround{
-                // margin-bottom: 350px;
-            }
-        }
-    }
-}
-
-@media (max-width: 1200px) {
-    footer{
-        width: 1440px;
-        .map{
-            // margin-left: -150px;
-            .infoFoots {
-                
-            }
-            .navigation{
-                h1{
-                    margin-left: -10px;
-    
-                }
-                img{
-                    margin-left: -50px;
-                }
-            }
-            .carta{
-    
-                .border{
-                    // margin-left: -200px;
-                }
-            }
-        }
-    }
-}
-@media (max-width: 1024px){
-    .map{
-        .carta{
-            .border{
-                margin-left: 200px;
-            }
-        }
-    }
-}
-@media (max-width:320px){
-    .map{
-        .infoFoots{
-            margin: 100px;
-        }
-        .navigation{
-            width: 450px;
-            
-        }
-        .carta{
-            .border{
-                margin: 100px;
-                margin-left: 100px;
-            }
-
-        }
-    }
-}
-@media (max-width:1440px){
-    .map{
-        .navigation{
-            margin-left: -50px;
-        }
-    }
 }
