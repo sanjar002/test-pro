@@ -62,6 +62,16 @@
 	.carousel {
 		margin-top: 70px;
 	}
+	.main-animation {
+		margin-top: 70px;
+		.animation-text {
+			text-align: center;
+			font-size: 32px;
+			line-height: 39px;
+			font-weight: 700;
+			color: #FA9801;
+		}
+	}
 }
 
 @media (max-width: 1200px) {

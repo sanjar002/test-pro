@@ -4,6 +4,7 @@ import Card from '../../components/card/Card'
 import Carousel from '../../components/Carousel/Carousel'
 
 import './Home.scss'
+import Animation from '../../components/animation/Animation'
 
 const Home = () => {
 	return (
@@ -30,7 +31,6 @@ const Home = () => {
 					</section>
 				</div>
 			</div>
-
 			<section>
 				<div className='container'>
 					<div className='wrapper'>
@@ -43,6 +43,14 @@ const Home = () => {
 				<div className='container'>
 					<div className='carousel'>
 						<Carousel />
+					</div>
+				</div>
+			</section>
+			<section className='main-animation'>
+				<div className='container'>
+					<div className='animation-text'>Биздин өнөктөштөр</div>
+					<div className='animation-content'>
+						<Animation />
 					</div>
 				</div>
 			</section>
