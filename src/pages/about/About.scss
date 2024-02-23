@@ -1,0 +1,232 @@
+body{
+    font-family: "Montserrat";
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+.bg-image{
+    width: 100%;
+    background:center url(./images/group.png);
+    display: flex;
+    background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-blend-mode: multiply;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+		height: 720px;
+    animation: fadeIn 2s ease-in-out;
+    img{
+        width: 100%;
+    }
+}
+.texts{
+    color: white;
+    text-align: center;
+    h1{
+        font-size: 64px;
+    }
+}
+.update{
+    display: flex;
+    justify-content: center;
+    .updateTxt{
+        margin-top: 59px;
+        p{
+            text-align: center;
+        }
+        .okurmen{
+            font-weight: to-upper-case($string: "");
+           
+        }
+        .important{
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(-100px);
+            }   
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .updateP{
+            margin-top: 40px;
+            opacity: 0;
+            animation: fadeInDown 1s ease-out forwards;
+            
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }   
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    }
+
+}
+.four_boxes{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 75px;
+    // justify-content: space-between;
+    animation: fadeIn 2s ease-in-out;
+    .box p{
+        text-align: center;
+        // font-size: 25px;
+        font-weight: 600;
+    }
+}
+.images{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    img{
+        width: 883px;
+        height: 517px;
+    }
+    .important{
+        position: absolute;
+        z-index: 1;
+
+    }
+    .first{
+        position: relative;
+    }
+    .second{
+        position: relative;
+        
+    }
+}
+
+#carousel{
+    .vectors{
+        width: 00px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 400px;
+        z-index: 2;
+        right: 130px;
+        button{
+                
+        }
+    }
+}
+
+@media (max-width: 1024px){
+     .update{
+        width: 1440px;
+     }
+     .bg-image{
+        width: 1440px;
+     }
+     .four_boxes{
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+        gap: 50px;
+        width: 1440px;
+     }
+}
+@media (max-width: 320px) {
+    .bg-image{
+        background-position: -220px;
+        .texts{
+            margin-left: -130px;
+        }
+    }
+}
+
+// @media (max-width: 1200px){
+//     .bg-image{
+        
+//         background-position: -280px;
+//     }
+//     .texts{
+//         margin-right: 200px;
+//     }
+//     .update{
+//         margin-left: 50px;
+//     }
+//     .four_boxes {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-around;
+//         align-items: center; 
+      
+//         .box {
+//           width: calc(40% - 20px); 
+//           margin: 10px; 
+//           text-align: center; 
+      
+//           img {
+//             max-width: 100%;
+//             height: auto; 
+//           }
+      
+//           p {
+//             margin-top: 10px; 
+//           }
+//         }
+//       }
+// }
+// @media (max-width: 1440px){
+//     .bg-image{
+//         background-position: -250px;
+//     }
+//     .texts{
+//         margin-right: 150px;
+//     }
+//     .update{
+//         margin-right: 130px;
+//     }
+//     .four_boxes {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-around;
+//       }
+      
+//       .row {
+//         display: flex;
+//         justify-content: space-around;
+//         width: 900px;
+//         margin-bottom: 20px; /* Adjust as needed */
+//       }
+      
+//       .box {
+//         flex: 0 0 calc(33.33% - -105px); /* Adjust as needed, considering margins */
+//         margin-bottom: 10px; 
+//         p{
+//             margin-right: 90px;
+//         }
+//       }
+      
+//       .single-box {
+//         flex: 0 0 calc(100% - 500px);
+//       }
+      
+// }
+
+
+.yt-video{
+    margin-top: 100px;
+    border-radius: 20px;
+}
