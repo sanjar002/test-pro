@@ -11,6 +11,8 @@ const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(
 const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
 
 function About({ children }) {
+
+
   const [isLoaded, setIsLoaded] = useState(false);
   const [InView, setInView] = useState(false);
 
@@ -57,6 +59,7 @@ function About({ children }) {
               <br /> билим алгысы келген студентер онлайн форматында окушат.
               <br /> Бүгүнкү күндө студенттерибиз окууну ийгиликтүү аяктап, IT
               адистери болуп иштей баштады.
+  
             </p>
           </div>
         </div>
