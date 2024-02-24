@@ -64,6 +64,7 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
+			<section className='home-form'></section>
 		</main>
 	)
 }

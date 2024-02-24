@@ -1,59 +1,40 @@
 import React from 'react'
+import AccordionAnswer from './AccordionAnswer'
 
-import Accordion from '@mui/material/Accordion';
-import AccordionActions from '@mui/material/AccordionActions';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Button from '@mui/material/Button';
-
+import './index.css'
 
 function AccordionRequest() {
+
+  const request = [
+    {
+        a: 'IT-ни окуу үчүн англис тили маанилүүбү?',
+        b: 'Жок.'
+    },
+    {
+        a: 'IT-ни окуу үчүн англис тили маанилүүбү?',
+        b: 'Ооба, болот. Англис тилин бизден бекер үйрөнөсүз. '
+    },
+    {
+        a: 'Жаш чектөө барбы?',
+        b: '14-жаштан 50 жашка чейин окууга болот'
+    },
+    {
+        a: 'Окуу борбор качан негизделген?',
+        b: '2022-жылы 25-майында негизделген.'
+    },
+    {
+        a: 'Окууну бүткөндөн кийин жумуш таап бересиздерби?',
+        b: 'Эгерде сиз окууну жакшы өздөштүрүп, биз койгон талаптарга жооп берсениз, анда жумуш жагынан беребиз!'
+    },
+    {
+      a: 'Сертификат берилеби?',
+      b: 'Албетте, экзаменден кийин'
+  }
+]    
+
   return (
-    <div>
-        <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
-        >
-          Accordion 1
-        </AccordionSummary>
-        <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2-content"
-          id="panel2-header"
-        >
-          Accordion 2
-        </AccordionSummary>
-        <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </AccordionDetails>
-      </Accordion>
-      <Accordion defaultExpanded>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel3-content"
-          id="panel3-header"
-        >
-          Accordion Actions
-        </AccordionSummary>
-        <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </AccordionDetails>
-        <AccordionActions>
-          <Button>Cancel</Button>
-          <Button>Agree</Button>
-        </AccordionActions>
-      </Accordion>
+    <div className='accordion-prop'>
+      <AccordionAnswer answer={request}/>
     </div>
   )
 }
