@@ -46,6 +46,20 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
+			<section className='main-animation'>
+				<div className='container'>
+					<div className='animation-text'>Биздин өнөктөштөр</div>
+					<div className='animation-content'>
+						<Animation />
+					</div>
+				</div>
+			</section>
+			<section className='main-request'>
+				<div className='container'>
+					<div className="main-request-text">Бизге эң көп берилүүчү суроолор</div>
+					ррввы
+				</div>
+			</section>
 		</main>
 	)
 }
