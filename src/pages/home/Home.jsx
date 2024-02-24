@@ -5,6 +5,7 @@ import Card from '../../components/card/Card'
 import Carousel from '../../components/Carousel/Carousel'
 
 import './Home.scss'
+import AccordionRequest from '../../components/accordion/AccordionRequest'
 
 const Home = () => {
 	return (
@@ -58,7 +59,9 @@ const Home = () => {
 			<section className='main-request'>
 				<div className='container'>
 					<div className="main-request-text">Бизге эң көп берилүүчү суроолор</div>
-					ррввы
+					<div className='main-request-accordion'>
+						<AccordionRequest />
+					</div>
 				</div>
 			</section>
 		</main>
