@@ -5,13 +5,13 @@ import React from 'react'
 function Form() {
   return (
     <form action="" className='form'>
-        <label>Имя 
+        <label>Имя fdddffd
             <input type="text"/>
         </label>
-        <label>Email
+        <label>Email dfjdf
             <input type="text"/>
         </label>
-        <label>Телефон 
+        <label>Телефон jfjdjdfjjfd
             <input type="text"/>
         </label>
     </form>
