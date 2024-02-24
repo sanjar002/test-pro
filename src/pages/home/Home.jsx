@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Animation from '../../components/animation/Animation'
 import Card from '../../components/card/Card'
 import Carousel from '../../components/Carousel/Carousel'
 
