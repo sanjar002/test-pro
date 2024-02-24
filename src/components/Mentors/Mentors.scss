@@ -1,0 +1,10 @@
+.mentor{
+    display: none;
+    border: 1px solid red;
+}
+
+@media(max-width: 650px) {
+    .mentor {
+        display: block;
+    }
+}

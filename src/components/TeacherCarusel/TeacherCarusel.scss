@@ -1,0 +1,28 @@
+.bgi {
+    background: url("../../assets/image/bgMentor.png");
+    background-size: cover;
+    // z-index: 100;
+}
+.carusel__card__mentor {
+    position: relative;
+}
+.card__text {
+    position: absolute;
+    bottom: 10%;
+    left: 22%;
+ }
+ .bgc {
+    background: url("../../assets/image/if\ \(condition\)\ {\ \ statements1\ }\ else\ {\ \ statements2\ }.png") no-repeat;
+    // background-size: cover;
+    background-position:  1000px 100px;
+    z-index: 200;
+    // right: 0px;
+ }
+ @media(max-width: 650px){
+    .bgc {
+        display: none;
+    }
+    .bgi{
+        display: none;
+    }
+ }
