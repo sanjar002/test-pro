@@ -1,6 +1,9 @@
 .header {
 	background-color: #fff;
 	padding: 15px;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
 	.header_wrapper {
 		display: flex;
 		justify-content: space-between;

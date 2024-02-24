@@ -3,6 +3,7 @@ import React from 'react'
 import Animation from '../../components/animation/Animation'
 import Card from '../../components/card/Card'
 import Carousel from '../../components/Carousel/Carousel'
+import Lesson from '../../components/lesson/index'
 
 import './Home.scss'
 import AccordionRequest from '../../components/accordion/AccordionRequest'
@@ -64,7 +65,14 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
-			<section className='home-form'></section>
+			<section className='home-form'>
+				<div className='container'>
+					<div className="home-form-text">Акысыз сабакка жазылыңыз</div>
+					<div className='home-form-time'>
+						<Lesson />
+					</div>
+				</div>
+			</section>
 		</main>
 	)
 }
