@@ -14,6 +14,7 @@ function index() {
         </div>
         <div className='content-form'>
             <Form />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, deleniti?
         </div>
     </section>
   )
