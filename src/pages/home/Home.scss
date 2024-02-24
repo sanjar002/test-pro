@@ -1,5 +1,5 @@
 .main {
-	margin-bottom: 20px;
+	// margin-bottom: 20px;
 	.main-content {
 		background-image: url('../../assets/image/image-nout.png');
 		background-repeat: no-repeat;
@@ -60,6 +60,7 @@
 		}
 	}
 	.carousel {
+		width: 100%;
 		margin-top: 70px;
 	}
 	.main-animation {
@@ -70,7 +71,7 @@
 			font-size: 32px;
 			line-height: 39px;
 			font-weight: 700;
-			color: #FA9801;
+			color: #000;
 		}
 	}
 	.main-request {
@@ -79,7 +80,33 @@
 			font-size: 36px;
 			font-weight: 700;
 			line-height: 43px;
-			color: #FA9801;
+			color: #000;
+		}
+		&-accordion {
+			width: 100%;
+			height: auto;
+			margin-bottom: 20px;
+		}
+	}
+	.home-form {
+		// background-image: url('../../assets/image/man.png');
+		// background-position: top center;
+		// background-size: contain;
+		// background-repeat: no-repeat;
+
+		background-image: url('../../assets/image/man.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-blend-mode: multiply;
+		width: 100%;
+		height: 980px;
+		&-text {
+			text-align: center;
+			font-size: 50px;
+			padding: 72px 0;
+			color: #fff;
+			font-weight: 700;
 		}
 	}
 }

@@ -3,8 +3,10 @@ import React from 'react'
 import Animation from '../../components/animation/Animation'
 import Card from '../../components/card/Card'
 import Carousel from '../../components/Carousel/Carousel'
+import Lesson from '../../components/lesson/index'
 
 import './Home.scss'
+import AccordionRequest from '../../components/accordion/AccordionRequest'
 
 const Home = () => {
 	return (
@@ -58,7 +60,17 @@ const Home = () => {
 			<section className='main-request'>
 				<div className='container'>
 					<div className="main-request-text">Бизге эң көп берилүүчү суроолор</div>
-					ррввы
+					<div className='main-request-accordion'>
+						<AccordionRequest />
+					</div>
+				</div>
+			</section>
+			<section className='home-form'>
+				<div className='container'>
+					<div className="home-form-text">Акысыз сабакка жазылыңыз</div>
+					<div className='home-form-time'>
+						<Lesson />
+					</div>
 				</div>
 			</section>
 		</main>
