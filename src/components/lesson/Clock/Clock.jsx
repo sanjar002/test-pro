@@ -11,7 +11,7 @@ function Clock() {
   let interval;
 
   const startTimer = () => {
-    const countDownDate = new Date().setHours(new Date().getHours() + 24);
+    const countDownDate = new Date().setHours(new Date().getHours() + 5);
 
     interval = setInterval(() => {
       const now = new Date().getTime();
