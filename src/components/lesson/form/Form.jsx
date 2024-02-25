@@ -15,6 +15,7 @@ function Form() {
             <input type="text" name='phone' placeholder='Сиздин телофон номериниз'/>
         </label>
         <button type='submit'>Басуу</button>
+        dfghjkl
     </form>
   )
 }
