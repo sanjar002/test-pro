@@ -1,6 +1,8 @@
 import React from 'react'
-import Clock from './Clock'
-import Form from './Form'
+import Clock from './Clock/Clock'
+import Form from './form/Form'
+
+import './index.scss'
 
 
 function index() {
@@ -14,7 +16,6 @@ function index() {
         </div>
         <div className='content-form'>
             <Form />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, deleniti?
         </div>
     </section>
   )
