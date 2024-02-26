@@ -1,36 +1,5 @@
-.clock {
-	width: 302px;
-	height: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  gap: 17px;
-}
-.clock section {
-	display: inline-flex;
-	height: 50px;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 4px;
-	flex-shrink: 0;
-}
-.clock span {
+.taimer {
 	color: #FA9801;
-	font-size: 50px;
-}
-.clock section small {
-	color: #FA9801;
-	font-size: 25px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 18px;
-}
-.clock section p {
-	color: #FA9801;
-	font-size: 80px;
-	font-style: normal;
+	font-size: 30px;
 	font-weight: 700;
-	line-height: 30px; 
-	letter-spacing: 1.28px;	
-	margin-bottom: 20px;
 }

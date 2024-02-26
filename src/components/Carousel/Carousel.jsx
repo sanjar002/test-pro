@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import Slider from 'react-slick'
 
-import html from '../../assets/image/html-1.svg'
-import css from '../../assets/image/css 1.png'
+import html from './images/img_1.jpg'
+import css from './images/img_2.jpg'
 import js from './images/img_3.jpg'
-import react from '../../assets/image/react 1.png'
-import sass from '../../assets/image/django 1.png'
-import mui from '../../assets/image/html 2 (1).png'
+import react from './images/img_4.jpg'
+import sass from './images/img_5.jpg'
+import mui from './images/img_6.jpg'
 import bootstrap from './images/img_7.jpg'
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa'
 

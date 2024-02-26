@@ -65,3 +65,14 @@
     transform: translateY(-50%) rotate(180deg);
     fill: green;
 }
+@media screen and (max-width: 1024px) {
+	.accordion-prop {
+        width: 900px;
+    }
+    .accordion {
+        width: 900px;
+    }
+    .accordion-item {
+        width: 100%;
+    }
+}
