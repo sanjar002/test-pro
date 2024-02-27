@@ -35,7 +35,7 @@ const CountdownTimer = () => {
     const hours = Math.floor((time % (24 * 3600)) / 3600);
     const minutes = Math.floor((time % 3600) / 60);
     const seconds = Math.floor(time % 60);
-    return `${days} дней, ${hours} часов, ${minutes} минут, ${seconds} секунд`;
+    return `${days} күн, ${hours} саат, ${minutes} мүнөт, ${seconds} секунд`;
   };
 
   return (

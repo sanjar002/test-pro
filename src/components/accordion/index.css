@@ -76,3 +76,15 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 992px) {
+	.accordion-prop {
+        width: 800px;
+    }
+    .accordion {
+        width: 800px;
+    }
+    .accordion-item {
+        width: 100%;
+    }
+}

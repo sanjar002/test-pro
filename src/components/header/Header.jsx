@@ -15,7 +15,7 @@ const Header = () => {
 					<div className='logo'>
 						<img src={logo} alt='okurmen logo' />
 					</div>
-					<nav className='navs'>
+					<nav className={`navs ${open ? 'nav-mobile' : ''}`} onClick={() => setOpen(!open)}>
 						<ul>
 							<li>
 								<Link to='/'>Башкы бет</Link>
