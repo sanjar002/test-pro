@@ -51,7 +51,7 @@ function Carousel() {
 	return (
 		<>
 			<div className='d-slide'>
-				<Slider {...setting}>
+				<Slider {...setting} className='slide-container'>
 					{images.map((img, ind) => (
 						<div className={ind === imageIndex ? 'slide activeSlide' : 'slide'}>
 							<img className='images__corusel' src={img} alt={img} />

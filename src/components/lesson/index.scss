@@ -16,12 +16,25 @@
     }
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
 	.content-form {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        width: 800px;
+        width: auto;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+	.content-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+        margin: 0 auto;
+        .content-time-text {
+            font-size: 40px;
+        }
     }
 }

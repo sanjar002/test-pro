@@ -18,7 +18,7 @@
 
     return (
       <AppContainer>
-      <Wrapper>
+        <Wrapper>
           <Marquee>
               <MarqueeGroup>
                   {
@@ -39,8 +39,8 @@
                   }
               </MarqueeGroup>
           </Marquee>
-      </Wrapper>
-  </AppContainer>
+        </Wrapper>
+      </AppContainer>
     )
   }
 
@@ -53,11 +53,19 @@
       color: #000;
       margin-top: 20px;
       margin-bottom: 100px;
-      @media screen and (max-width: 1024px) {
-        width: 900px;
+      @media (max-width: 1024px) {
+        // width: 900px;
+        width: auto;
+        height: auto;
       }
-      @media screen and (max-width: 992px) {
-        width: 750px;
+      @media (max-width: 992px) {
+        // width: 750px;
+        width: auto;
+        height: auto;
+      }
+      @media (max-width: 778px) {
+        width: 600px;
+        height: auto;
       }
   `;
 
@@ -66,6 +74,18 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @media (max-width: 1024px) {
+        width: 900px;
+        margin: 0 auto;
+      }
+      @media (max-width: 992px) {
+        width: 750px;
+        margin: 0 auto;
+      }
+      @media (max-width: 778px) {
+        width: 600px;
+        height: auto;
+      }
   `;
 
   const Marquee = styled.div`

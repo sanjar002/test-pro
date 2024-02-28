@@ -65,24 +65,40 @@
     transform: translateY(-50%) rotate(180deg);
     fill: green;
 }
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
 	.accordion-prop {
-        width: 900px;
+        /* width: 900px; */
+        width: auto;
+        /* width: auto; */
     }
     .accordion {
         width: 900px;
+        /* width: auto; */
     }
     .accordion-item {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
 	.accordion-prop {
-        width: 800px;
+        /* width: 800px; */
+        width: auto;
     }
     .accordion {
         width: 800px;
+    }
+    .accordion-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 778px) {
+	.accordion-prop {
+        width: 700px;
+    }
+    .accordion {
+        width: 700px;
     }
     .accordion-item {
         width: 100%;
