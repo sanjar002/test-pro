@@ -9,13 +9,10 @@ footer {
   border: 2px solid red;
 
   .map {
-    padding: 42px 0 74px 00px;
-    // width: 100%;
-
+    padding: 42px 0 74px 200px;
     .navigation {
       display: flex;
-      // margin-top: 50px;
-      width: 630px;
+      width: 500px;
       justify-content: center;
       align-items: center;
 
@@ -46,6 +43,10 @@ footer {
       justify-content: space-around;
       .infoFoots {
         margin: 100px;
+        .gmail{
+          display: flex;
+          align-items: center;
+        }
       }
 
       .border {
@@ -94,17 +95,24 @@ footer {
   footer {
     height: 1000px;
     .map {
+      
       .navigation {
-        width: 350px;
+        width: 770px;
         display: flex;
         justify-content: center;
       }
       .carta {
         display: flex;
-        // justify-content: center;
+        margin-left: 18%;
         flex-direction: column;
+        .mainCarta{
+          width: 500px;
+        }
+        .border{
+          opacity: 0;
+        }
         .infoFoots {
-            margin-right: 50px;
+            margin-right: 100px;
           p {
           }
         }
@@ -112,15 +120,20 @@ footer {
     }
   }
 }
-@media (max-width:320){
-   .map{
-    .carta{
-        .infoFoots{
-            .okurmen_it{
-                width: 200px;
-            }
-        }
-    }
-   }
 
+@media screen and (min-width: 425px) {
+  .infoFoots {
+    width: 400px;
+    flex-wrap: wrap;
+  }
+  
+
+  .telephone,
+  .instagram,
+  .gmail,
+  .facebook,
+  .towards {
+    flex: 1 1 18%; 
+  }
 }
+

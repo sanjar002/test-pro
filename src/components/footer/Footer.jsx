@@ -16,116 +16,100 @@ const Footer = ({ children }) => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <footer >
+    <footer>
       <div className="container">
-      <div className="map">
-        <div className="navigation" ref={ref}>
-          <span className="nav">
-            <img src={Nav} alt="" />
-          </span>
-          <h1
-            style={{
-              transform: isInView ? "none" : "translateX(200px)",
-              opacity: isInView ? 1 : 0,
-              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-              fontSize: "30",
-            }}
-          >
-            Биздин Дарек {children}
-          </h1>
-        </div>
-
-        <div className="carta">
-          <div className="mapAround">
-            <CartHome />
+        <div className="map">
+          <div className="navigation" ref={ref}>
+            <span className="nav">
+              <img src={Nav} alt="" />
+            </span>
+            <h1
+              style={{
+                transform: isInView ? "none" : "translateX(200px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+                fontSize: "30",
+              }}
+            >
+              Биздин Дарек {children}
+            </h1>
           </div>
-          <div className="border"></div>
-          
-          <div className="infoFoots">
-            <div
-              className="telephone"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "30px",
-                transform: isInView ? "none" : "translateX(200px)",
-                opacity: isInView ? 1 : 0,
-                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-              }}
-            >
-              {children}
-              <img src={Telephone} alt="" />
-              <p className="okurmen_it" style={{width:"200"}}>+999 (709)-677-798</p>
-            </div>
-            <div
-              className="instagram"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "30px",
-                transform: isInView ? "none" : "translateX(-200px)",
-                opacity: isInView ? 1 : 0,
-                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-              }}
-            >
-              {children}
-              <img src={Instagram} alt="" style={{ paddingTop: "30px" }} />
-              <p className="okurmen_it" style={{width:"200"}}>okurmen_it</p>
-            </div>
-            <div
-              className="gmail"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "30px",
-                transform: isInView ? "none" : "translateX(200px)",
-                opacity: isInView ? 1 : 0,
-                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-              }}
-            >
-              {children}
-              <img src={Gmail} alt="" style={{ paddingTop: "30px" }} />
-              <p className="okurmen_it">okurmen@gmail.com</p>
-            </div>
-            <div
-              className="facebook"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "30px",
-                transform: isInView ? "none" : "translateX(-200px)",
-                opacity: isInView ? 1 : 0,
-                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-              }}
-            >
-              {children}
 
-              <img src={Facebook} alt="" style={{ paddingTop: "30px" }} />
-              <p className="okurmen_it" style={{width:"200"}}>okurmen_it</p>
+          <div className="carta">
+            <div className="mapAround">
+              <CartHome />
             </div>
-            <div
-              className="towards"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "30px",
-                transform: isInView ? "none" : "translateX(200px)",
-                opacity: isInView ? 1 : 0,
-                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-              }}
-            >
-              <img src={Towardz} alt="" style={{ paddingTop: "30px" }} />
-              <p className="okurmen_it" style={{width:"200"}}>
-                Турусбекова 109/1 Максимум <br /> БЦ 4-этаж, 407 / 411 -
-                аудитория
-              </p>
+            <div className="border"></div>
+
+            <div className="infoFoots">
+              <div
+                className="telephone"
+                style={getStyle(isInView, "none", "translateX(200px)")}
+              >
+                {children}
+                <img src={Telephone} alt="" />
+                <p className="okurmen_it" style={{ width: "200px" }}>
+                  +999 (709)-677-798
+                </p>
+              </div>
+              <div
+                className="instagram"
+                style={getStyle(isInView, "none", "translateX(-200px)")}
+              >
+                {children}
+                <img src={Instagram} alt="" style={{ paddingTop: "30px" }} />
+                <p className="okurmen_it" style={{ width: "200px" }}>
+                  okurmen_it
+                </p>
+              </div>
+              <div
+                className="gmail"
+                style={getStyle(isInView, "none", "translateX(200px)")}
+              >
+                {children}
+                <img src={Gmail} alt="" style={{ paddingTop: "30px" }} />
+                <p className="okurmen_it">okurmen@gmail.com</p>
+              </div>
+              <div
+                className="facebook"
+                style={getStyle(isInView, "none", "translateX(-200px)")}
+              >
+                {children}
+                <img src={Facebook} alt="" style={{ paddingTop: "30px" }} />
+                <p className="okurmen_it" style={{ width: "200px" }}>
+                  okurmen_it
+                </p>
+              </div>
+              <div
+                className="towards"
+                style={getStyle(isInView, "none", "translateX(200px)")}
+              >
+                <img src={Towardz} alt="" style={{ paddingTop: "30px" }} />
+                <p className="okurmen_it" style={{ width: "200px" }}>
+                  Турусбекова 109/1 Максимум <br /> БЦ 4-этаж, 407 / 411 -
+                  аудитория
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </footer>
   );
 };
+
+
+
+
+const getStyle = (isInView, display, transform) => ({
+  display: "flex",
+  alignItems: "center",
+  gap: "30px",
+  transform: isInView ? "none" : transform,
+  opacity: isInView ? 1 : 0,
+  transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+});
+
+
 
 export default Footer;
