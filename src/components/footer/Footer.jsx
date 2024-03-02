@@ -10,8 +10,7 @@ import Facebook from "./images/facebook.png";
 import Towardz from "./images/carta.png";
 
 const Footer = ({ children }) => {
-  // const [isLoaded, setIsLoaded] = useState(false);
-  // const [InView, setInView] = useState(false);
+
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -30,9 +29,8 @@ const Footer = ({ children }) => {
                 transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
                 fontSize: "30",
                 filter: ""
-              }}
-            >
-              Биздин Дарек. {children}
+              }}>
+              Биздин Дарек {children}
             </h1>
           </div>
 
@@ -40,8 +38,9 @@ const Footer = ({ children }) => {
             <div className="mapAround">
               <CartHome />
             </div>
-            <div className="border"></div>
-
+            <div className="border">
+              
+            </div>
             <div className="infoFoots">
               <div
                 className="telephone"
@@ -60,7 +59,7 @@ const Footer = ({ children }) => {
                 {children}
                 <img src={Instagram} alt="" style={{ paddingTop: "30px" }} />
                 <p className="okurmen_it" style={{ width: "200px" }}>
-                  okurmen_it
+                  okurmen_it.
                 </p>
               </div>
               <div
@@ -89,6 +88,7 @@ const Footer = ({ children }) => {
                 <p className="okurmen_it" style={{ width: "200px" }}>
                   Турусбекова 109/1 Максимум <br /> БЦ 4-этаж, 407 / 411 -
                   аудитория 
+                  ffffgfgggfgffff
                 </p>
               </div>
             </div>
@@ -98,6 +98,8 @@ const Footer = ({ children }) => {
     </footer>
   );
 };
+
+
 
 const getStyle = (isInView, transform) => ({
   display: "flex",
