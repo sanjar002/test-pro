@@ -64,14 +64,14 @@ footer {
       // margin-left: -150px;
 
       .navigation {
-        width: 500px;
+        // width: 500px;
         display: flex;
         justify-content: center;
         h1 {
-          margin-left: -10px;
+          // margin-left: -10px;
         }
         img {
-          margin-left: -50px;
+          // margin-left: -50px;
         }
       }
       // .carta {
@@ -83,7 +83,8 @@ footer {
 }
 @media (max-width: 768px) {
   footer {
-    height: 1000px;
+    // height: 1000px;
+    height: auto;
     .map {
       .navigation {
         width: 350px;
@@ -101,7 +102,7 @@ footer {
     }
   }
 }
-@media (max-width:320){
+@media (max-width:320px){
    .map{
     .carta{
         .infoFoots{

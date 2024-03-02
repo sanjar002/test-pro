@@ -64,7 +64,8 @@
         height: auto;
       }
       @media (max-width: 778px) {
-        width: 600px;
+        // width: 600px;
+        width: 100%;
         height: auto;
       }
   `;
@@ -75,15 +76,19 @@
       align-items: center;
       justify-content: center;
       @media (max-width: 1024px) {
-        width: 900px;
+        width: 100%;
         margin: 0 auto;
       }
       @media (max-width: 992px) {
-        width: 750px;
+        width: 100%;
         margin: 0 auto;
       }
       @media (max-width: 778px) {
-        width: 600px;
+        width: 100%;
+        height: auto;
+      }
+      @media (max-width: 425px) {
+        width: 425px;
         height: auto;
       }
   `;

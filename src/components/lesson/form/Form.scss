@@ -33,3 +33,14 @@
         font-size: 24px;
     }
 }
+
+@media (max-width: 425px) {
+    .form {
+        padding: 30px;
+        .form-content {
+            input {
+                width: 300px;
+            }
+        }
+    }
+}

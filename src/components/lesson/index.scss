@@ -38,3 +38,16 @@
         }
     }
 }
+
+
+@media (max-width: 425px) {
+	.content-form {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 0 auto;
+        .content-time-text {
+            font-size: 30px;
+        }
+    }
+}

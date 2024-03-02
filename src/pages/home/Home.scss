@@ -1,5 +1,5 @@
 .main {
-	// margin-bottom: 20px;
+	width: 100%;
 	.main-content {
 		background-image: url('../../assets/image/image-nout.png');
 		background-repeat: no-repeat;
@@ -88,11 +88,6 @@
 		}
 	}
 	.home-form {
-		// background-image: url('../../assets/image/man.png');
-		// background-position: top center;
-		// background-size: contain;
-		// background-repeat: no-repeat;
-
 		background-image: url('../../assets/image/man.png');
 		background-repeat: no-repeat;
 		background-position: center;
@@ -127,13 +122,11 @@
 		}
 	}
 	.carousel {
-		// width: 1000px;
 		width: auto;	
 		height: auto;
 		margin: 0 auto;
 	}
 	.main-request {
-		// width: 900px;
 		width: auto;
 		margin: 0 auto;
 	}
@@ -144,7 +137,6 @@
 
 @media (max-width: 768px) {
 	.main {
-		// width: 100%;
 		width: auto;
 		height: auto;
 		.main-content {
@@ -163,5 +155,27 @@
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 425px) {
+	.main {
+		width: 425px;
+		height: auto;
+		.main-content {
+			height: auto;
+			.section {
+				.laptop-title {
+					left: 50%;
+					top: 30%;
+					transform: translate(-50%, -10%);
+					h2 {
+						font-size: 30px;
+					}
+				}
+			}
+		}
+	}
+	.home-form {
+		.home-form-text {
+			font-size: 40px;
+		}
+	}
 }

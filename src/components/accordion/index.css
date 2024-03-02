@@ -86,7 +86,8 @@
         width: auto;
     }
     .accordion {
-        width: 800px;
+        /* width: 800px; */
+        width: 100%;
     }
     .accordion-item {
         width: 100%;
@@ -95,10 +96,22 @@
 
 @media (max-width: 778px) {
 	.accordion-prop {
-        width: 700px;
+        width: 100%;
     }
     .accordion {
-        width: 700px;
+        width: 100%;
+    }
+    .accordion-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+	.accordion-prop {
+        width: 425px;
+    }
+    .accordion {
+        width: 425px;
     }
     .accordion-item {
         width: 100%;
