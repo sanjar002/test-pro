@@ -71,19 +71,14 @@ const Footer = ({ children }) => {
               >
                 {children}
                 <img src={Facebook} alt="" style={{ paddingTop: "30px" }} />
-                <p className="okurmen_it" style={{ width: "200px" }}>
-                  okurmen_it
-                </p>
+                <p className="okurmen_it" style={{ width: "200px" }}>okurmen_it</p>
               </div>
               <div
                 className="towards"
                 style={getStyle(isInView, "none", "translateX(200px)")}
               >
                 <img src={Towardz} alt="" style={{ paddingTop: "30px" }} />
-                <p className="okurmen_it" style={{ width: "200px" }}>
-                  Турусбекова 109/1 Максимум <br /> БЦ 4-этаж, 407 / 411 -
-                  аудитория
-                </p>
+                <p className="okurmen_it" style={{ width: "200px" }}>Турусбекова 109/1 Максимум <br /> БЦ 4-этаж, 407 / 411 - аудитория</p>
               </div>
             </div>
           </div>
@@ -99,7 +94,6 @@ const getStyle = (isInView, transform) => ({
   transform: isInView ? "none" : transform,
   opacity: isInView ? 1 : 0,
   transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-  filter:"",
 });
 
 
