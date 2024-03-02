@@ -29,9 +29,10 @@ const Footer = ({ children }) => {
                 opacity: isInView ? 1 : 0,
                 transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
                 fontSize: "30",
+                filter: ""
               }}
             >
-              Биздин Дарек {children}
+              Биздин Дарек. {children}
             </h1>
           </div>
 
@@ -89,6 +90,7 @@ const Footer = ({ children }) => {
                   Турусбекова 109/1 Максимум <br /> БЦ 4-этаж, 407 / 411 -
                   аудитория
                 </p>
+                <p>qwerty</p>
               </div>
             </div>
           </div>
@@ -99,7 +101,7 @@ const Footer = ({ children }) => {
 };
 
 
-
+////////dfrghtyujhgtrdewsfghjk/hgdfghjkhgfdyhjkhgfrdewfrgyhkjhgdfesfrgkjhgfdrgthjgrtgftyhujkytrhkyrteuilkyt5ryhujkbjyrtyu
 
 const getStyle = (isInView, display, transform) => ({
   display: "flex",
@@ -108,6 +110,7 @@ const getStyle = (isInView, display, transform) => ({
   transform: isInView ? "none" : transform,
   opacity: isInView ? 1 : 0,
   transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+  filter:"",
 });
 
 
