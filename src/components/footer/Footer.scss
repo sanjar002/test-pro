@@ -1,0 +1,155 @@
+
+footer {
+  height: 663px;
+  background-color: #e6e6e6;
+  margin-top: 100px;
+  width: 100%;
+
+  .map {
+    padding: 42px 0 74px 200px;
+    .navigation {
+      display: flex;
+      width: 450px;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        margin-right: 10px;
+      }
+      .nav {
+        opacity: 0;
+        animation: fadeInUp 1.5s ease-out forwards;
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(-200px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+    .infoFoots {
+    }
+    .carta {
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      .infoFoots {
+        margin: 100px;
+        .gmail{
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .border {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 352px;
+        border-right: 4px solid white;
+        width: 4px;
+        border-radius: 10px;
+        margin-left: 450px;
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  footer {
+    width: 100%;
+    .map {
+      .navigation {
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        h1 {
+          margin-left: -10px;
+        }
+        img {
+          margin-left: -50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    height: 1000px;
+    .map {
+      .navigation {
+        width: 420px;
+        display: flex;
+        justify-content: center;
+      }
+      .carta {
+        display: flex;
+        flex-direction: column;
+        .mapAround{
+          margin-left: -10%;
+        }
+        .mainCarta {
+
+          width: 500px;
+        }
+        .border {
+          opacity: 0;
+        }
+        .infoFoots {
+          margin-top: -10%;
+          p {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  footer {
+    margin-top: 50px; 
+    .map {
+      padding:20px 0px;
+      .navigation {
+        width: 100%; 
+        padding: 0 10px; 
+        h1 {
+          margin-left: 0px;
+        }
+        img {
+          margin-left: 0px; 
+        }
+      }
+      .carta {
+        display: flex;
+        margin-left: -10px;
+        .mapAround{
+          margin-right: 25%;
+        }
+        .infoFoots{
+          margin-top: 110%;
+          text-align: center;
+          width: 100%;
+        }
+        .border {
+          display: none; 
+        }
+      }
+    }
+  }
+}
+@media (min-width:320px){
+  .map{
+    .carta{
+      .infoFoots{
+        width: 100%;
+      }
+    }
+  }
+}
