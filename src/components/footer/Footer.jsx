@@ -10,10 +10,8 @@ import Facebook from "./images/facebook.png";
 import Towardz from "./images/carta.png";
 
 const Footer = ({ children }) => {
-
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-
   return (
     <footer>
       <div className="container">
@@ -28,18 +26,15 @@ const Footer = ({ children }) => {
                 opacity: isInView ? 1 : 0,
                 transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
                 fontSize: "30",
-                filter: ""
               }}>
               Биздин Дарек {children}
             </h1>
           </div>
-
           <div className="carta">
             <div className="mapAround">
               <CartHome />
             </div>
             <div className="border">
-              
             </div>
             <div className="infoFoots">
               <div
@@ -87,8 +82,7 @@ const Footer = ({ children }) => {
                 <img src={Towardz} alt="" style={{ paddingTop: "30px" }} />
                 <p className="okurmen_it" style={{ width: "200px" }}>
                   Турусбекова 109/1 Максимум <br /> БЦ 4-этаж, 407 / 411 -
-                  аудитория 
-                  ffffgfgggfgffff
+                  аудитория
                 </p>
               </div>
             </div>
@@ -98,9 +92,6 @@ const Footer = ({ children }) => {
     </footer>
   );
 };
-
-
-
 const getStyle = (isInView, transform) => ({
   display: "flex",
   alignItems: "center",
