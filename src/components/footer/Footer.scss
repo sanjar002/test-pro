@@ -1,18 +1,16 @@
 .container {
-  border: 2px solid red;
 }
 footer {
   height: 663px;
   background-color: #e6e6e6;
   margin-top: 100px;
   width: 100%;
-  border: 2px solid red;
 
   .map {
     padding: 42px 0 74px 200px;
     .navigation {
       display: flex;
-      width: 500px;
+      width: 450px;
       justify-content: center;
       align-items: center;
 
@@ -35,12 +33,11 @@ footer {
       }
     }
     .infoFoots {
-      // margin-left: 250px
     }
     .carta {
       display: flex;
-      // align-items: center;
-      justify-content: space-around;
+      justify-content: center;
+      gap: 100px;
       .infoFoots {
         margin: 100px;
         .gmail{
@@ -61,7 +58,6 @@ footer {
         margin-top: 50px;
       }
       .mapAround {
-        // margin-bottom: 350px;
       }
     }
   }
@@ -71,8 +67,6 @@ footer {
   footer {
     width: 100%;
     .map {
-      // margin-left: -150px;
-
       .navigation {
         width: 500px;
         display: flex;
@@ -91,28 +85,32 @@ footer {
     }
   }
 }
+
 @media (max-width: 768px) {
   footer {
     height: 1000px;
     .map {
-      
       .navigation {
-        width: 770px;
+        width: 420px;
         display: flex;
         justify-content: center;
       }
       .carta {
         display: flex;
-        margin-left: 18%;
+        // margin-left: 18%;
         flex-direction: column;
-        .mainCarta{
+        .mapAround{
+          margin-left: -10%;
+        }
+        .mainCarta {
+
           width: 500px;
         }
-        .border{
+        .border {
           opacity: 0;
         }
         .infoFoots {
-            margin-right: 100px;
+          margin-top: -10%;
           p {
           }
         }
@@ -121,19 +119,45 @@ footer {
   }
 }
 
-@media screen and (min-width: 425px) {
-  .infoFoots {
-    width: 400px;
-    flex-wrap: wrap;
-  }
-  
-
-  .telephone,
-  .instagram,
-  .gmail,
-  .facebook,
-  .towards {
-    flex: 1 1 18%; 
+@media (max-width: 425px) {
+  footer {
+    margin-top: 50px; 
+    .map {
+      padding:20px 0px;
+      .navigation {
+        width: 100%; 
+        padding: 0 10px; 
+        h1 {
+          margin-left: 0px;
+        }
+        img {
+          margin-left: 0px; 
+        }
+      }
+      .carta {
+        display: flex;
+        margin-left: -10px;
+        .mapAround{
+          margin-right: 25%;
+        }
+        .infoFoots{
+          margin-top: 110%;
+          text-align: center;
+          width: 100%;
+        }
+        .border {
+          display: none; 
+        }
+      }
+    }
   }
 }
-
+@media (min-width:320px){
+  .map{
+    .carta{
+      .infoFoots{
+        width: 100%;
+      }
+    }
+  }
+}
