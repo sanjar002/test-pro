@@ -88,9 +88,8 @@ const Footer = ({ children }) => {
                 <img src={Towardz} alt="" style={{ paddingTop: "30px" }} />
                 <p className="okurmen_it" style={{ width: "200px" }}>
                   Турусбекова 109/1 Максимум <br /> БЦ 4-этаж, 407 / 411 -
-                  аудитория
+                  аудитория 
                 </p>
-                <p>qwerty</p>
               </div>
             </div>
           </div>
