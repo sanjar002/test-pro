@@ -4,7 +4,7 @@
     padding: 47px 52px;
     background-color: #fff;
     border-radius: 10px     ;
-    label {
+    .form-content {
         display: flex;
         flex-direction: column;
         gap: 4px;
@@ -31,5 +31,16 @@
         border-radius: 25px;
         color: #fff;
         font-size: 24px;
+    }
+}
+
+@media (max-width: 425px) {
+    .form {
+        padding: 30px;
+        .form-content {
+            input {
+                width: 300px;
+            }
+        }
     }
 }
