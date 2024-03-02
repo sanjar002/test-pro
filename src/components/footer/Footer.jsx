@@ -99,10 +99,7 @@ const Footer = ({ children }) => {
   );
 };
 
-
-////////dfrghtyujhgtrdewsfghjk/hgdfghjkhgfdyhjkhgfrdewfrgyhkjhgdfesfrgkjhgfdrgthjgrtgftyhujkytrhkyrteuilkyt5ryhujkbjyrtyu
-
-const getStyle = (isInView, display, transform) => ({
+const getStyle = (isInView, transform) => ({
   display: "flex",
   alignItems: "center",
   gap: "30px",

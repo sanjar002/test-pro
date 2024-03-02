@@ -1,10 +1,8 @@
-
 footer {
   height: 663px;
   background-color: #e6e6e6;
   margin-top: 100px;
   width: 100%;
-
   .map {
     padding: 42px 0 74px 200px;
     .navigation {
@@ -12,7 +10,6 @@ footer {
       width: 450px;
       justify-content: center;
       align-items: center;
-
       img {
         margin-right: 10px;
       }
@@ -31,8 +28,6 @@ footer {
         }
       }
     }
-    .infoFoots {
-    }
     .carta {
       display: flex;
       justify-content: center;
@@ -44,7 +39,6 @@ footer {
           align-items: center;
         }
       }
-
       .border {
         display: flex;
         align-items: center;
@@ -95,7 +89,6 @@ footer {
           margin-left: -10%;
         }
         .mainCarta {
-
           width: 500px;
         }
         .border {
@@ -103,8 +96,6 @@ footer {
         }
         .infoFoots {
           margin-top: -10%;
-          p {
-          }
         }
       }
     }
