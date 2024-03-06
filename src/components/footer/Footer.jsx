@@ -78,7 +78,7 @@ const Footer = ({ children }) => {
                 style={getStyle(isInView, "none", "translateX(200px)")}
               >
                 <img src={Towardz} alt="" style={{ paddingTop: "30px" }} />
-                <p className="okurmen_it" style={{ width: "200px" }}>Турусбекова 109/1 Максимум <br /> БЦ 4-этаж, 407 / 411 - аудитория</p>
+                <p className="okurmen_it" style={{ width: "200px" }}>Турусбекова 109/1 Максимум <br /> БЦ 4-этаж 407/411 - аудитория</p>
               </div>
             </div>
           </div>

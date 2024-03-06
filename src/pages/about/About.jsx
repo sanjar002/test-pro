@@ -120,13 +120,11 @@ function About({ children }) {
               }
               transition={{ duration: 1, delay: 1 }}
               viewport={{ once: true }}
-              onViewportEnter={() => setInView(true)}
-            >
+              onViewportEnter={() => setInView(true)}>
               <img
                 src={Uluk}
                 alt="Sanjarbek Madumarov"
-                onLoad={() => setIsLoaded(true)}
-              />
+                onLoad={() => setIsLoaded(true)}/>
             </motion.div>
             <p style={{ fontSize: "25px" }}>Улукбек Бакыбек уулу</p>
             <p>Директор орун басары</p>
@@ -137,9 +135,8 @@ function About({ children }) {
               animate={
                 isLoaded && InView
                   ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
-                  : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
-              }
-              transition={{ duration: 1, delay: 1 }}
+                  : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }}
+              transition={{ duration: 2, delay: 1 }}
               viewport={{ once: true }}
               onViewportEnter={() => setInView(true)}
             >
@@ -159,10 +156,7 @@ function About({ children }) {
             height="700"
             class="yt-video"
             src="https://www.youtube.com/embed/nR7XkTWi9tM?si=HerVxcqeYYQPT7y9?autoplay=1&vq=hd1080"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
             style={{ margin: "auto", marginTop:"100" }}
           ></iframe>
         </div>
