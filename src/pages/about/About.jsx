@@ -10,7 +10,7 @@ import "./About.scss";
 const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
 const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
 
-function About() {
+function About({ children }) {
   const [isLoaded, setIsLoaded] = useState(false);
   const [InView, setInView] = useState(false);
 
@@ -24,9 +24,9 @@ function About() {
             <div className="texts">
               <h1>OKURMEN IT программалоо тилдерин</h1>
               <p style={{ opacity: "0.6", fontSize: "20" }}>
-                Тажырыйбанын негизинде биз идеалдуу курстун программасын <br />{" "}
-                туздук, курстан кийин сиз ‘разработчик’ болуп компанияда <br />{" "}
-                иштесениз болот.
+                Тажырыйбанын негизинде биз идеалдуу курстун программасын <br />
+                туздук, курстан кийин сиз ‘разработчик’ болуп компанияда <br />
+                иштесениз болот
               </p>
             </div>
           </section>
@@ -39,7 +39,7 @@ function About() {
               className="important"
               style={{ fontWeight: "600", fontSize: "20" }}
             >
-              <span className="okurmen">ОКУРМЭН </span>{" "}
+              <span className="okurmen">ОКУРМЭН </span>
               <span>- бул өнүктүрүүчү чөйрө!</span>
             </p>
             <div className="updateP">
@@ -152,10 +152,11 @@ function About() {
         </div>
         <div className="ReelsOfOkurmen">
           <iframe
-            width="100%"
+            width="90%"
             height="700"
             class="yt-video"
             src="https://www.youtube.com/embed/nR7XkTWi9tM?si=HerVxcqeYYQPT7y9?autoplay=1&vq=hd1080"
+            
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; "
             style={{ margin: "auto", marginTop:"100" }}
           ></iframe>
