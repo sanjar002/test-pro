@@ -23,6 +23,7 @@ function About({ children }) {
           <section className="section">
             <div className="texts">
               <h1>OKURMEN IT программалоо тилдерин</h1>
+              <h2>ghjklhjkljkl</h2>
               <p style={{ opacity: "0.6", fontSize: "20" }}>
                 Тажырыйбанын негизинде биз идеалдуу курстун программасын <br />{" "}
                 туздук, курстан кийин сиз ‘разработчик’ болуп компанияда <br />{" "}
