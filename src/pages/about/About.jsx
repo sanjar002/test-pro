@@ -3,6 +3,7 @@ import Mansur from "./images/mansur.png";
 import Sanjar from "./images/sanjar.png";
 import Uluk from "./images/uluk.png";
 import Munar from "./images/munar.png";
+// import asdas
 
 import { useInView, motion } from "framer-motion";
 import "./About.scss";
