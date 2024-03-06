@@ -10,7 +10,7 @@ import "./About.scss";
 const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
 const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
 
-function About({ children }) {
+function About() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [InView, setInView] = useState(false);
 
@@ -23,7 +23,6 @@ function About({ children }) {
           <section className="section">
             <div className="texts">
               <h1>OKURMEN IT программалоо тилдерин</h1>
-              <h2>ghjklhjkljkl</h2>
               <p style={{ opacity: "0.6", fontSize: "20" }}>
                 Тажырыйбанын негизинде биз идеалдуу курстун программасын <br />{" "}
                 туздук, курстан кийин сиз ‘разработчик’ болуп компанияда <br />{" "}
@@ -137,7 +136,7 @@ function About({ children }) {
                 isLoaded && InView
                   ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
                   : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }}
-              transition={{ duration: 2, delay: 1 }}
+              transition={{ duration: 1, delay: 1 }}
               viewport={{ once: true }}
               onViewportEnter={() => setInView(true)}
             >
@@ -148,7 +147,7 @@ function About({ children }) {
               />
             </motion.div>
             <p style={{ fontSize: "25px" }}>Мунарбек Мавлянов</p>
-            <p>Okurmen_Kids директору</p>
+            <p>Okurmen_Kids директору.</p>
           </div>
         </div>
         <div className="ReelsOfOkurmen">
@@ -157,7 +156,7 @@ function About({ children }) {
             height="700"
             class="yt-video"
             src="https://www.youtube.com/embed/nR7XkTWi9tM?si=HerVxcqeYYQPT7y9?autoplay=1&vq=hd1080"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; "
             style={{ margin: "auto", marginTop:"100" }}
           ></iframe>
         </div>
