@@ -87,7 +87,7 @@ function About({ children }) {
             <p style={{ fontSize: "25px" }}>Мансур-Бек Канназар</p>
             <p>Башкы Негиздоочу</p>
           </div>
-          <div className="box">
+         <div className="box">
             <motion.div
               initial={false}
               animate={
