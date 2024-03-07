@@ -1,0 +1,119 @@
+.accordion-prop {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.accordion {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 7px;
+}
+
+.accordion-item {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.5);
+}
+
+.accordion-header {
+    position: relative;
+    width: 100%;
+    padding: 20px 60px 20px 30px;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 7px;
+    font-size: 22px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.accordion-collapse {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.accordion-collapse.open {
+    height: auto;
+}
+
+.accordion-body {
+    padding: 30px 60px 30px 30px;
+    background-color: #f1f1f1;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    font-size: 20px;
+    color: #393939;
+}
+
+.accordion-arrow {
+    margin-left: 500px;
+    position: absolute;
+    transform: translateY(-50%);
+    fill: rgba(255, 123, 0);
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, fill 5s ease;
+    top: 38px;
+    right: 12px;
+}
+
+.accordion-arrow.active {
+    transform: translateY(-50%) rotate(180deg);
+    fill: green;
+}
+@media (max-width: 1024px) {
+	.accordion-prop {
+        /* width: 900px; */
+        width: auto;
+        /* width: auto; */
+    }
+    .accordion {
+        width: 900px;
+        /* width: auto; */
+    }
+    .accordion-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+	.accordion-prop {
+        /* width: 800px; */
+        width: auto;
+    }
+    .accordion {
+        /* width: 800px; */
+        width: 100%;
+    }
+    .accordion-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 778px) {
+	.accordion-prop {
+        width: 100%;
+    }
+    .accordion {
+        width: 100%;
+    }
+    .accordion-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+	.accordion-prop {
+        width: 425px;
+    }
+    .accordion {
+        width: 425px;
+    }
+    .accordion-item {
+        width: 100%;
+    }
+}

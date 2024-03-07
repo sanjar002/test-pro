@@ -1,10 +1,13 @@
-import React from 'react'
-import './Header.scss'
-
-import logo from '../../assets/image/okurmen-logo .png'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 
+import logo from '../../assets/image/okurmen-logo .png'
+
+import './Header.scss'
+
 const Header = () => {
+	const [open, setOpen] = useState(false)
+
 	return (
 		<header className='header'>
 			<div className='container'>
@@ -12,7 +15,7 @@ const Header = () => {
 					<div className='logo'>
 						<img src={logo} alt='okurmen logo' />
 					</div>
-					<nav className='navs'>
+					<nav className={`navs ${open ? 'nav-mobile' : ''}`} onClick={() => setOpen(!open)}>
 						<ul>
 							<li>
 								<Link to='/'>Башкы бет</Link>
@@ -34,6 +37,13 @@ const Header = () => {
 							</li>
 						</ul>
 					</nav>
+					<div className='mobile'>
+						<div className={`mobile-btn ${open ? 'active' : ''}`} onClick={() => setOpen(!open)}>
+              				<span></span>
+              				<span></span>
+             				<span></span>
+            			</div>
+					</div>
 				</div>
 			</div>
 		</header>

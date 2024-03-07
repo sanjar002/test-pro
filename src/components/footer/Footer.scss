@@ -60,14 +60,16 @@ footer {
     width: 100%;
     .map {
       .navigation {
-        width: 500px;
+        // width: 500px;
         display: flex;
         justify-content: center;
         h1 {
-          margin-left: -10px;
+          // margin-left: -10px;
         }
         img {
           margin-left: -50px;
+        }
+      }
         }
       }
     }
@@ -76,7 +78,7 @@ footer {
 
 @media (max-width: 768px) {
   footer {
-    height: 1000px;
+    height: auto;
     .map {
       .navigation {
         width: 420px;
@@ -125,7 +127,15 @@ footer {
         .mapAround{
           margin-right: 25%;
         }
-        .infoFoots{
+            margin-right: 50px;
+        }
+      }
+    }
+  }
+}
+@media (max-width:320px){
+   .map{
+    .carta{
           margin-top: 110%;
           text-align: center;
           width: 100%;

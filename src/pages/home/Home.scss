@@ -1,5 +1,5 @@
 .main {
-	margin-bottom: 20px;
+	width: 100%;
 	.main-content {
 		background-image: url('../../assets/image/image-nout.png');
 		background-repeat: no-repeat;
@@ -62,16 +62,120 @@
 	.carousel {
 		margin-top: 70px;
 	}
+	.main-animation {
+		margin-top: 70px;
+		margin-bottom: 40px;
+		.animation-text {
+			text-align: center;
+			font-size: 32px;
+			line-height: 39px;
+			font-weight: 700;
+			color: #000;
+		}
+	}
+	.main-request {
+		&-text {
+			text-align: center;
+			font-size: 36px;
+			font-weight: 700;
+			line-height: 43px;
+			color: #000;
+		}
+		&-accordion {
+			width: 100%;
+			height: auto;
+			margin-bottom: 20px;
+		}
+	}
+	.home-form {
+		background-image: url('../../assets/image/man.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-blend-mode: multiply;
+		width: 100%;
+		height: 980px;
+		&-text {
+			text-align: center;
+			font-size: 50px;
+			padding: 72px 0;
+			color: #fff;
+			font-weight: 700;
+		}
+	}
 }
 
-@media (max-width: 1200px) {
-}
-
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
+	.main {
+		width: auto;
+	}
+	.main-content {
+		height: auto;
+		position: relative;
+		.section {
+			height: auto;
+			.laptop-title {
+				left: 50%;
+      			top: 10%;
+      			transform: translate(-23%, -10%);
+			}
+		}
+	}
+	.carousel {
+		width: auto;	
+		height: auto;
+		margin: 0 auto;
+	}
+	.main-request {
+		width: auto;
+		margin: 0 auto;
+	}
+	.home-form {
+		padding: 20px;
+	}
 }
 
 @media (max-width: 768px) {
+	.main {
+		width: auto;
+		height: auto;
+		.main-content {
+			height: auto;
+			.section {
+				.laptop-title {
+					left: 50%;
+					top: 30%;
+					transform: translate(-50%, -10%);
+					h2 {
+						font-size: 40px;
+					}
+				}
+			}
+		}
+	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 425px) {
+	.main {
+		width: 425px;
+		height: auto;
+		.main-content {
+			height: auto;
+			.section {
+				.laptop-title {
+					left: 50%;
+					top: 30%;
+					transform: translate(-50%, -10%);
+					h2 {
+						font-size: 30px;
+					}
+				}
+			}
+		}
+	}
+	.home-form {
+		.home-form-text {
+			font-size: 40px;
+		}
+	}
 }
