@@ -1,7 +1,9 @@
 import React from 'react';
+import "./CartHome.css"
 
 
 const CartHome = () => {
+  
   return (
     <section className="text-gray-600 body-font relative">
       <div className="absolute inset-0 bg-gray-300">
@@ -12,6 +14,7 @@ const CartHome = () => {
           marginHeight="0"
           marginWidth="0"
           title="map"
+          id='main'
           className='mainCarta'
           scrolling="no"
           src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=109/1%Turusbekov%st%20Kyrgyzstan%20Bishkek&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
